@@ -1,0 +1,6 @@
+@SimplePayment_HostAddress = http://localhost:5004
+
+GET {{SimplePayment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
