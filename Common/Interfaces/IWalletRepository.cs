@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IUserRepository
+    public interface IWalletRepository
     {
-        Task<bool> InsertUser(User user);
-        
+        Task<bool> InsertWallet(Wallet wallet);
+        Task<bool> UpdateWallet(Wallet wallet);
     }
 }

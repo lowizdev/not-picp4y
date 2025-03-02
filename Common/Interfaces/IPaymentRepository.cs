@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IUserRepository
+    public interface IPaymentRepository
     {
-        Task<bool> InsertUser(User user);
-        
+        Task<Payment?> InsertPayment(Payment payment);
     }
 }

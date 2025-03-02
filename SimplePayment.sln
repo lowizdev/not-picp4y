@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePayment", "SimplePayment\SimplePayment.csproj", "{8C427C32-43F4-4C26-9A9D-BC70D1F7D403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplePayment", "SimplePayment\SimplePayment.csproj", "{8C427C32-43F4-4C26-9A9D-BC70D1F7D403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C420271E-5D6A-4CC1-9469-40825ACC4BD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{C420271E-5D6A-4CC1-9469-40825ACC4BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessingWorkerService", "PaymentProcessingWorkerService\PaymentProcessingWorkerService.csproj", "{B6CE7D46-982F-4900-83DC-83A30A467639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C420271E-5D6A-4CC1-9469-40825ACC4BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C420271E-5D6A-4CC1-9469-40825ACC4BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C420271E-5D6A-4CC1-9469-40825ACC4BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CE7D46-982F-4900-83DC-83A30A467639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CE7D46-982F-4900-83DC-83A30A467639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CE7D46-982F-4900-83DC-83A30A467639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CE7D46-982F-4900-83DC-83A30A467639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

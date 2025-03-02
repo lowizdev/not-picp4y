@@ -2,14 +2,15 @@
 using Common.Interfaces;
 using Common.Models;
 using Common.Models.DTO;
+using SimplePayment.Repositories;
 
 namespace SimplePayment.Services
 {
     
     public class UsersService : IUsersService
     {
-        private readonly IUserRepository _userRepository;
-        public UsersService(IUserRepository userRepository)
+        private readonly IUserFullRepository _userRepository;
+        public UsersService(IUserFullRepository userRepository)
         {
             _userRepository = userRepository;
         }

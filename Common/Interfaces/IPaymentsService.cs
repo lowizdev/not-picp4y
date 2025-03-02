@@ -1,4 +1,4 @@
-﻿using Common.Models;
+﻿using Common.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IUserRepository
+    public interface IPaymentsService
     {
-        Task<bool> InsertUser(User user);
-        
+        Task<bool> CreatePayment(PaymentDTO paymentDTO);
     }
 }

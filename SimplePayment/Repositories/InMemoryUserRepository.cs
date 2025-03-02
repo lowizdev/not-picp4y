@@ -1,10 +1,15 @@
 ﻿using Common.Interfaces;
 using Common.Models;
+using Common.Models.SQLite;
 
 namespace SimplePayment.Repositories
 {
+    public interface IUserFullRepository : IUserRepository, IQueryUserRepository 
+    { 
     
-    public class InMemoryUserRepository : IUserRepository
+    }
+
+    public class InMemoryUserRepository : IUserFullRepository
     {
         //DEVELOPMENT ONLY
 
@@ -35,12 +40,17 @@ namespace SimplePayment.Repositories
 
         }
 
-        public async Task<User?> QueryUserById(int id)
+        public async Task<UserSQLiteDTO?> QueryUserById(int id)
         {
 
-            return _users.Find(x => x.Id == id);
+            //return _users.Find(x => x.Id == id);
+            throw new NotImplementedException();
 
         }
 
+        public Task<UserSQLiteDTO?> QuerySingleUserById(string id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

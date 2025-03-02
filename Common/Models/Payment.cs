@@ -9,17 +9,17 @@ namespace Common.Models
 {
     public class Payment
     {
-        public int? Id { get; set; }
+        public string? PaymentIdentifier { get; set; }
         public decimal Value { get; private set; } //TODO: SHOULD BE INTEGER REPRESENTING CENTS
         public int PayerId { get; private set; }
         public int PayeeId { get; private set; }
         public EPaymentStatus PaymentStatus { get; private set; }
         //public DateTime? Created { get; private set; } //TODO: INCLUDE DATE IN PAYMENT
 
-        public Payment(int id, decimal value, int payerId, int payeeId, EPaymentStatus paymentStatus)
+        public Payment(string? id, decimal value, int payerId, int payeeId, EPaymentStatus paymentStatus)
         {
-            
-            Id = id;
+
+            PaymentIdentifier = id;
             Value = value;
             PayerId = payerId;
             PayeeId = payeeId;
